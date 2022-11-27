@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@mixin btn-style-1 {
+   color: #000;
+   background-color: #fff;
+   border-radius: 5px;
+   padding: 1rem 2rem;
+   border: none;
+   font-weight: 800;
+}
+
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+html {
+   font-family: 'Epilogue', sans-serif;
+}
+
+
+@import "scss/layout/header";
+@import "scss/layout/filter";
+@import "scss/layout/item";
+@import "scss/layout/pagination";
+@import "scss/layout/poster";
+@import "scss/layout/nav-bottom";
+@import "scss/layout/footer";
+
+
+main {
+   background-color: #fdf0e9;
+}
+
+.main-container {
+   max-width: 1200px;
+   margin: auto;
+   padding: .1rem;
+
+}

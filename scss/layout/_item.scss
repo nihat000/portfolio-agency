@@ -1,0 +1,51 @@
+.item {
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: flex-start;
+   grid-gap: 1.7rem;
+   color: #fff;
+
+   &-box {
+      position: relative;
+
+      &-img {
+         width: 100%;
+      }
+
+      &-name {
+         position: absolute;
+         bottom: 10%;
+         left: 10%;
+      }
+
+      &-tag {
+         position: absolute;
+         bottom: 25%;
+         left: 10%;
+         padding: .6rem 1rem;
+         border-radius: 15px;
+         border: none;
+      }
+   }
+}
+
+
+@media screen and (max-width:768px) {
+   .item {
+      &-box {
+         width: 90% !important;
+         margin: auto;
+
+         &-img {
+            width: 100;
+         }
+
+         &-tag {
+            bottom: 20%;
+         }
+      }
+   }
+
+}

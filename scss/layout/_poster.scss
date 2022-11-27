@@ -1,0 +1,50 @@
+.poster {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #ef6d58;
+   padding: 4rem 6rem;
+   color: #fff;
+   border-radius: 5px;
+
+   &-main {
+      &-title {
+         margin-bottom: 3rem;
+      }
+
+      &-desc {
+         margin-bottom: 2rem;
+         color: #ffffffad;
+      }
+
+      &-btn {
+         @include btn-style-1();
+
+      }
+   }
+
+   &-sub {
+      max-width: 400px;
+
+      img {
+         width: 100%;
+      }
+   }
+}
+
+@media screen and (max-width:768px) {
+   .poster {
+      flex-direction: column;
+      padding: 3rem 1rem;
+
+      &-sub {
+         order: -1
+      }
+
+      &-main {
+         &-title {
+            margin-bottom: 1rem;
+         }
+      }
+   }
+}
